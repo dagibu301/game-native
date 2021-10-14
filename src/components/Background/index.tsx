@@ -8,7 +8,7 @@ type Props = {
   children: ReactNode;
 };
 
-export function Background({ children }: Props) {
+export const Background = ({ children }: Props) => {
   const { secondary80, secondary100 } = theme.colors;
 
   return (

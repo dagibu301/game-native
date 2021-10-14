@@ -9,6 +9,7 @@ import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
 
 import { SignIn } from './src/screens/SignIn';
+import { Background } from './src/components/Background'
 
 const App = () => {
   const [fontsLoaded] = useFonts({
@@ -23,14 +24,14 @@ const App = () => {
   }
 
   return (
-    <>
+    <Background>
       <StatusBar
         barStyle='light-content'
         backgroundColor='transparent'
         translucent
       />
       <SignIn />
-    </>
+    </Background>
   );
 };
 
